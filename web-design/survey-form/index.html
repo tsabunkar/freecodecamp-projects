@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="background">
+      <div id="left-container">
+        <img
+          id="image"
+          src="https://firebasestorage.googleapis.com/v0/b/pomodoro-1592f.appspot.com/o/3-jhakri-Web-Login-UI.png?alt=media&token=90106f15-49ca-4eb6-959e-8836504102f4"
+        />
+      </div>
+
+      <form id="right-container">
+        <div>
+          <h1 id="title">GSoC Survey Feedback 2020</h1>
+        </div>
+        <div>
+          <p id="description">
+            Google Summer of Code is a global program focused on bringing more
+            student developers into open source software development. Students
+            work with an open source organization on a 3 month programming
+            project during their break from school.
+          </p>
+        </div>
+
+        <!-- <form id="survey-form"> -->
+        <div>
+          <label for="name">Student Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="first name    middle name    last name"
+          />
+        </div>
+
+        <div>
+          <label for="email">Personal Email ID</label>
+          <input type="email" id="email" placeholder="email address" />
+        </div>
+        <!-- !Email validation Error -->
+
+        <div>
+          <label for="number">Age</label>
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="90"
+            placeholder="18+"
+          />
+        </div>
+        <!-- !Non-number validation Error -->
+        <!-- !min and max validation Error -->
+
+        <div>
+          <label for="dropdown"
+            >Choose the Open Source Organization you have Contributed
+            for:</label
+          >
+          <select id="dropdown">
+            <option value="python-sw">Python Software Foundation</option>
+            <option value="gcc-sw">GNU Compiler Collection</option>
+            <option value="git-sw">Git</option>
+            <option value="jenkins-sw">Jenkins Project</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="male"> Gender</label>
+          <div id="gender">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="mentor">
+            What would you like to see us improve on in 2021 ?
+          </label>
+          <div>
+            <input type="checkbox" id="mentor" value="mentor" />
+            <label for="mentor"> Mentor Guidance </label><br />
+            <input type="checkbox" id="project" value="project" />
+            <label for="project"> Project Submission Process</label><br />
+            <input type="checkbox" id="stay" value="stay" />
+            <label for="stay"> Hospitality, Ambience and Stay</label><br />
+            <input type="checkbox" id="volunteers" value="volunteers" />
+            <label for="volunteers"> Volunteers and other facilities</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="other-feedback">Other Feedback:</label>
+          <textarea
+            id="other-feedback"
+            rows="4"
+            cols="50"
+            placeholder="What did you love the most of GSoC?"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Rest</button>
+      </form>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
