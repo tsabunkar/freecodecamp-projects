@@ -21,33 +21,41 @@
           <h1 id="title">GSoC Survey Feedback</h1>
         </div>
         <div>
-          <p id="description">
-            Google Summer of Code is a global program focused on bringing more
-            student developers into open source software development. Students
-            work with an open source organization on a three month programming
-            project during their break from school.
-          </p>
+          <article>
+            <p id="description">
+              Google Summer of Code is a global program focused on bringing more
+              student developers into open source software development. Students
+              work with an open source organization on a three month programming
+              project during their break from school.
+            </p>
+          </article>
         </div>
 
-        <!-- <form id="survey-form"> -->
-        <div>
-          <label for="name">Student Name</label>
+        <div class="component-container">
+          <label class="label-field" for="name">Student Name</label>
           <input
+            class="component-field"
             type="text"
             id="name"
             placeholder="first name    middle name    last name"
           />
         </div>
 
-        <div>
-          <label for="email">Personal Email ID</label>
-          <input type="email" id="email" placeholder="email address" />
+        <div class="component-container">
+          <label class="label-field" for="email">Personal Email ID</label>
+          <input
+            class="component-field"
+            type="email"
+            id="email"
+            placeholder="email address"
+          />
         </div>
         <!-- !Email validation Error -->
 
-        <div>
-          <label for="number">Age</label>
+        <div class="component-container">
+          <label class="label-field" for="number">Age</label>
           <input
+            class="component-field"
             type="number"
             id="number"
             min="18"
@@ -58,12 +66,12 @@
         <!-- !Non-number validation Error -->
         <!-- !min and max validation Error -->
 
-        <div>
-          <label for="dropdown"
+        <div class="component-container">
+          <label class="label-field" for="dropdown"
             >Choose the Open Source Organization you have Contributed
             for:</label
           >
-          <select id="dropdown">
+          <select class="component-field" id="dropdown">
             <option value="python-sw">Python Software Foundation</option>
             <option value="gcc-sw">GNU Compiler Collection</option>
             <option value="git-sw">Git</option>
@@ -72,9 +80,9 @@
           </select>
         </div>
 
-        <div>
-          <label for="male"> Gender</label>
-          <div id="gender">
+        <div class="component-container">
+          <label class="label-field" for="male"> Gender</label>
+          <div class="component-field" id="gender">
             <input type="radio" id="male" name="gender" value="male" />
             <label for="male">Male</label><br />
             <input type="radio" id="female" name="gender" value="female" />
@@ -84,11 +92,11 @@
           </div>
         </div>
 
-        <div>
-          <label for="mentor">
+        <div class="component-container">
+          <label class="label-field" for="mentor">
             What would you like to see us improve on in?
           </label>
-          <div>
+          <div class="component-field">
             <input type="checkbox" id="mentor" value="mentor" />
             <label for="mentor"> Mentor Guidance </label><br />
             <input type="checkbox" id="project" value="project" />
@@ -100,9 +108,12 @@
           </div>
         </div>
 
-        <div>
-          <label for="other-feedback">Other Feedback:</label>
+        <div class="component-container">
+          <label class="label-field" for="other-feedback"
+            >Other Feedback:</label
+          >
           <textarea
+            class="component-field"
             id="other-feedback"
             rows="4"
             cols="50"
@@ -111,9 +122,7 @@
         </div>
 
         <button class="learn-more" type="button" id="submit">Submit</button>
-        <!-- <button type="reset" id="reset">Rest</button> -->
       </form>
-      <!-- </div> -->
     </div>
   </body>
 </html>
