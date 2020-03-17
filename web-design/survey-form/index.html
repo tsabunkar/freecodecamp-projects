@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="pushable-btn.css" />
   </head>
   <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div id="background">
       <div id="left-container">
         <img
@@ -16,7 +17,7 @@
         />
       </div>
 
-      <form id="right-container">
+      <form id="survey-form">
         <div>
           <h1 id="title">GSoC Survey Feedback</h1>
         </div>
@@ -32,28 +33,34 @@
         </div>
 
         <div class="component-container">
-          <label class="label-field" for="name">Student Name</label>
+          <label id="name-label" class="label-field" for="name"
+            >Student Name</label
+          >
           <input
             class="component-field"
             type="text"
             id="name"
             placeholder="first name    middle name    last name"
+            required
           />
         </div>
 
         <div class="component-container">
-          <label class="label-field" for="email">Personal Email ID</label>
+          <label id="email-label" class="label-field" for="email"
+            >Personal Email ID</label
+          >
           <input
             class="component-field"
             type="email"
             id="email"
             placeholder="email address"
+            required
           />
         </div>
         <!-- !Email validation Error -->
 
         <div class="component-container">
-          <label class="label-field" for="number">Age</label>
+          <label id="number-label" class="label-field" for="number">Age</label>
           <input
             class="component-field"
             type="number"
@@ -121,7 +128,7 @@
           ></textarea>
         </div>
 
-        <button class="learn-more" type="button" id="submit">Submit</button>
+        <button class="learn-more" type="submit" id="submit">Submit</button>
       </form>
     </div>
   </body>
