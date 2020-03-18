@@ -1,0 +1,23 @@
+#header-img {
+  width: 3%;
+  min-width: 40px;
+}
+
+.orange {
+  background-color: #ed764d !important;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#nav1,
+#nav2,
+#nav3 {
+  margin: 50px;
+  margin-top: 100px;
+}
