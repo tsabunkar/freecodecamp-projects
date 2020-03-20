@@ -21,3 +21,16 @@ html {
   margin: 50px;
   margin-top: 100px;
 }
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+#nav2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
