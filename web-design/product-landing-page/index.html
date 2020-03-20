@@ -17,43 +17,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        var uluru = { lat: 12.9932, lng: 77.70158 };
-        // The map, centered at Uluru
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({ position: uluru, map: map });
-      }
-    </script>
-    <!--Load the API from the specified URL
-          * The async attribute allows the browser to render the page while the API loads
-          * The key parameter will contain your own API key (which is not needed for this tutorial)
-          * The callback parameter executes the initMap() function
-          -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPtopyM6HFDNRm0CM2rU2UpKko7_6VPpk&callback=initMap"
-    ></script>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header id="header">
       <nav id="nav-bar" class="navbar fixed-top  navbar-dark orange">
         <img id="header-img" src="./assets/micro.png" alt="microservice" />
-        <a class="navbar-brand nav-link" href="#nav1">Nav1</a>
-        <a class="navbar-brand nav-link" href="#nav2">Nav2</a>
-        <a class="navbar-brand nav-link" href="#nav3">Nav3</a>
-        <a class="navbar-brand nav-link" href="#nav4">Nav4</a>
+        <a class="navbar-brand nav-link" href="#Features">Features</a>
+        <a class="navbar-brand nav-link" href="#Pricing">Pricing</a>
+        <a class="navbar-brand nav-link" href="#Feedback">Feedback</a>
+        <a class="navbar-brand nav-link" href="#LocateUs">LocateUs</a>
       </nav>
     </header>
     <div>
-      <div id="nav1">
+      <div id="Features">
         <!-- decription of microservice -->
 
         <article>
@@ -70,6 +44,7 @@
         </article>
 
         <iframe
+          id="video"
           width="320"
           height="240"
           src="https://www.youtube.com/embed/j1gU2oGFayY"
@@ -78,15 +53,15 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div id="nav2">
+      <div id="Pricing">
         <!-- Card -->
         <div class="card card-cascade narrower">
           <!-- Card image -->
           <div class="view view-cascade gradient-card-header purple-gradient">
             <!-- Title -->
-            <h2 class="card-header-title">Free</h2>
+            <h2 class="card-header-title">Free Membership</h2>
             <!-- Subtitle -->
-            <h5 class="mb-0 pb-3 pt-2">Trail Version Only</h5>
+            <h5 class="mb-0 pb-3 pt-2"><b>$0</b>/Month</h5>
           </div>
 
           <!-- Card content -->
@@ -111,7 +86,7 @@
             <!-- Title -->
             <h2 class="card-header-title">Premium Membership</h2>
             <!-- Subtitle -->
-            <h5 class="mb-0 pb-3 pt-2">$99/Month</h5>
+            <h5 class="mb-0 pb-3 pt-2"><b>$99</b>/Month</h5>
           </div>
 
           <!-- Card content -->
@@ -136,7 +111,7 @@
             <!-- Title -->
             <h2 class="card-header-title">Platinum Membership</h2>
             <!-- Subtitle -->
-            <h5 class="mb-0 pb-3 pt-2">$199/Month</h5>
+            <h5 class="mb-0 pb-3 pt-2"><b>$199</b>/Month</h5>
           </div>
 
           <!-- Card content -->
@@ -154,7 +129,7 @@
         </div>
         <!-- Card -->
       </div>
-      <div id="nav3">
+      <div id="Feedback">
         <!-- Material form login -->
         <div class="card">
           <h5 class="card-header info-color white-text text-center py-4">
@@ -194,32 +169,36 @@
         <!-- Material form login -->
       </div>
 
-      <div id="map"></div>
-
-      <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = { lat: 12.9932, lng: 77.70158 };
-          // The map, centered at Uluru
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-          });
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({ position: uluru, map: map });
-        }
-      </script>
-      <!--Load the API from the specified URL
-            * The async attribute allows the browser to render the page while the API loads
-            * The key parameter will contain your own API key (which is not needed for this tutorial)
-            * The callback parameter executes the initMap() function
-            -->
-      <script
-        async
-        defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPtopyM6HFDNRm0CM2rU2UpKko7_6VPpk&callback=initMap"
-      ></script>
+      <div id="LocateUs">
+        <div id="map"></div>
+      </div>
     </div>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: 12.9932, lng: 77.70158 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <!--Load the API from the specified URL
+          * The async attribute allows the browser to render the page while the API loads
+          * The key parameter will contain your own API key (which is not needed for this tutorial)
+          * The callback parameter executes the initMap() function
+          -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPtopyM6HFDNRm0CM2rU2UpKko7_6VPpk&callback=initMap"
+    ></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

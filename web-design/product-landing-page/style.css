@@ -15,11 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
-#nav1,
-#nav2,
-#nav3 {
-  margin: 50px;
-  margin-top: 100px;
+#Features,
+#Pricing,
+#Feedback,
+#LocateUs {
+  margin: 100px 50px 0px 50px;
 }
 
 /* Set the size of the div element that contains the map */
@@ -28,9 +28,41 @@ html {
   width: 100%; /* The width is the width of the web page */
 }
 
-#nav2 {
+#Pricing {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+}
+
+.card-header-title {
+  align-self: center;
+  width: 95%;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+}
+
+#Features {
+  display: flex;
+  flex-direction: column;
+}
+
+#video {
+  align-self: center;
+}
+
+#Feedback div {
+  width: 100%;
+}
+
+#Feedback {
+  margin: 100px 10% 0 10%;
 }
