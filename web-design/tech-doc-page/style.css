@@ -1,13 +1,16 @@
+/* apply for code element which is inside the pre elment */
 pre code {
   overflow-x: auto;
   color: #525252;
   white-space: pre;
-  /* padding: 1.2em 1.4em; */
   font-size: 0.85rem;
   line-height: 1.6rem;
   display: block;
+  margin: 0 2px;
+  border-radius: 2px;
 }
 
+/* both the elements will be applied with below style */
 code,
 pre {
   font-family: "Roboto Mono", Monaco, courier, monospace;
@@ -18,11 +21,6 @@ pre {
 pre {
   border-radius: 2px;
   position: relative;
-}
-
-code {
-  margin: 0 2px;
-  border-radius: 2px;
 }
 
 body {
@@ -57,4 +55,70 @@ body {
 
 img {
   max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#left-nav {
+  float: left;
+  width: 20%;
+  background-color: #f9f9f9;
+  position: fixed;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translate(0, 0);
+}
+
+@media screen and (max-width: 900px) {
+  #left-nav {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+    transform: translate(-280px, 0);
+  }
+}
+
+#right_main {
+  float: right;
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: #304455;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #42b983;
+}
+
+a:active {
+  font-weight: 600;
+  text-decoration: none;
+  color: #42b983;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* apply for li element which is inside the ul elment i.e inside header i.e inside #navbar */
+#navbar > header > ul > li {
+  margin: 0 0 15px 0;
+}
+
+#navbar > header > ul {
+  line-height: 1.5em;
+  padding-inline-start: 20px;
+}
+
+.main-section > ul {
+  line-height: 2em;
+  padding-inline-start: 10px;
+}
+
+.main-section > ul > li::before {
+  content: " ✽ ";
+  color: #42b983; /* or whatever color you prefer */
 }
