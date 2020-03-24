@@ -1,0 +1,60 @@
+pre code {
+  overflow-x: auto;
+  color: #525252;
+  white-space: pre;
+  /* padding: 1.2em 1.4em; */
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+  display: block;
+}
+
+code,
+pre {
+  font-family: "Roboto Mono", Monaco, courier, monospace;
+  font-size: 0.85em;
+  background-color: #f8f8f8;
+}
+
+pre {
+  border-radius: 2px;
+  position: relative;
+}
+
+code {
+  margin: 0 2px;
+  border-radius: 2px;
+}
+
+body {
+  color: #304455;
+  background-color: #fff;
+}
+
+.comments {
+  color: #707070;
+}
+
+.scripts {
+  color: #2973b7;
+}
+
+.scripts-values {
+  color: #42b983;
+}
+
+.keywords {
+  color: #d63200;
+}
+
+.output {
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 25px 35px;
+  margin-top: 1em;
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+
+img {
+  max-width: 100%;
+}

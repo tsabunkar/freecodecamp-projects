@@ -7,6 +7,153 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    hello world
+    <main id="main-doc">
+      <!-- Page(s) Main Content [Techincal documentation] -->
+      <section class="main-section">
+        <header id="What_is_Vue.js">
+          <h4>What is Vue.js?</h4>
+        </header>
+        <p>
+          Vue (pronounced /vjuː/, like view) is a progressive framework for
+          building user interfaces. Unlike other monolithic frameworks, Vue is
+          designed from the ground up to be incrementally adoptable. The core
+          library is focused on the view layer only, and is easy to pick up and
+          integrate with other libraries or existing projects. On the other
+          hand, Vue is also perfectly capable of powering sophisticated
+          Single-Page Applications when used in combination with modern tooling
+          and supporting libraries.
+        </p>
+        <p>
+          If you’d like to learn more about Vue before diving in, we created a
+          video walking through the core principles and a sample project.
+        </p>
+        <p>
+          If you are an experienced frontend developer and want to know how Vue
+          compares to other libraries/frameworks, check out the Comparison with
+          Other Frameworks.
+        </p>
+      </section>
+      <section class="main-section">
+        <header id="Getting_Started">
+          <h4>Getting Started</h4>
+        </header>
+        <div id="notice">
+          The official guide assumes intermediate level knowledge of HTML, CSS,
+          and JavaScript. If you are totally new to frontend development, it
+          might not be the best idea to jump right into a framework as your
+          first step - grasp the basics then come back! Prior experience with
+          other frameworks helps, but is not required.
+        </div>
+        <p>
+          The easiest way to try out Vue.js is using the Hello World example.
+          Feel free to open it in another tab and follow along as we go through
+          some basic examples. Or, you can create an index.html file and include
+          Vue with:
+        </p>
+
+        <pre> <code> <span class="comments">&lt;!-- development version, includes helpful console warnings --&gt;</span>
+ <span class="scripts">&lt;script src=</span><span class="scripts-values">"https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</span><span class="scripts">&gt; &lt;/script&gt;</span></code>
+</pre>
+
+        <div>
+          or
+        </div>
+
+        <pre> <code> <span class="comments">&lt;!-- production version, optimized for size and speed --&gt;</span>
+ <span class="scripts">&lt;script src=</span><span class="scripts-values">"https://cdn.jsdelivr.net/npm/vue"</span><span class="scripts">&gt; &lt;/script&gt;</span></code>
+</pre>
+
+        <p>
+          The Installation page provides more options of installing Vue. Note:
+          We do not recommend that beginners start with vue-cli, especially if
+          you are not yet familiar with Node.js-based build tools.
+        </p>
+
+        <p>
+          If you prefer something more interactive, you can also check out this
+          tutorial series on Scrimba, which gives you a mix of screencast and
+          code playground that you can pause and play around with anytime.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <header id="Declarative_Rendering">
+          <h4>Declarative Rendering</h4>
+        </header>
+        <p>
+          At the core of Vue.js is a system that enables us to declaratively
+          render data to the DOM using straightforward template syntax:
+        </p>
+        <pre> <code> <span class="scripts">&lt;div id=</span><span class="scripts-values">"app"</span><span class="scripts">&gt; </span>
+  {{ message }}
+ <span class="scripts">&lt;/div&gt; </span></code></pre>
+        <div></div>
+        <pre> <code><span class="keywords">var</span> app = <span class="keywords">new</span> Vue({
+  el: <span class="scripts-values">'#app'</span>,
+  data: {
+    message:  <span class="scripts-values">'Hello Vue!'</span>
+  }
+})     </code></pre>
+
+        <div class="output">
+          Hello Vue
+        </div>
+
+        <p>
+          We have already created our very first Vue app! This looks pretty
+          similar to rendering a string template, but Vue has done a lot of work
+          under the hood. The data and the DOM are now linked, and everything is
+          now reactive. How do we know? Open your browser’s JavaScript console
+          (right now, on this page) and set app.message to a different value.
+          You should see the rendered example above update accordingly.
+        </p>
+
+        <p>
+          Note that we no longer have to interact with the HTML directly. A Vue
+          app attaches itself to a single DOM element (#app in our case) then
+          fully controls it. The HTML is our entry point, but everything else
+          happens within the newly created Vue instance.
+        </p>
+      </section>
+      <section class="main-section">
+        <header id="Composing_with_Components">
+          <h4>Composing with Components</h4>
+        </header>
+        <p>
+          The component system is another important concept in Vue, because it’s
+          an abstraction that allows us to build large-scale applications
+          composed of small, self-contained, and often reusable components. If
+          we think about it, almost any type of application interface can be
+          abstracted into a tree of components:
+        </p>
+
+        <p>
+          <img src="./assets/components.png" alt="Component Tree" />
+        </p>
+
+        <p>
+          In Vue, a component is essentially a Vue instance with pre-defined
+          options. Registering a component in Vue is straightforward:
+        </p>
+        <p>
+          Now you can compose it in another component’s template:
+        </p>
+        <pre>
+          <code>  <span class="scripts">&lt;ol&gt;</span>
+   <span class="comments">&lt;!-- Create an instance of the todo-item component --&gt;</span>
+   <span class="scripts">  &lt;todo-item&gt;&lt;/todo-item&gt;
+  &lt;/ol&gt;</span></code></pre>
+      </section>
+      <section class="main-section">
+        <header id="Ready_for_More">
+          <h4>Ready for More?</h4>
+        </header>
+        <p>
+          We’ve briefly introduced the most basic features of Vue.js core - the
+          rest of this guide will cover them and other advanced features with
+          much finer details, so make sure to read through it all!
+        </p>
+      </section>
+    </main>
   </body>
 </html>
