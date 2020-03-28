@@ -1,0 +1,37 @@
+.navbar-fixed-top {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background: #eeeeee;
+  margin-top: -15px;
+  margin-left: 10px !important;
+  margin-right: 10px !important ;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+@media all and (max-width: 500px) {
+  .nav-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+#navbar {
+  width: 100%;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+  color: #5e5e61;
+  font-weight: 800;
+}
